@@ -6,7 +6,7 @@ Un petit panneau de contrôle pour Windows, pensé pour jouer : modes de perform
 
 **[Télécharger WinHelper.exe](https://github.com/badb0ol/WinHelper/releases/latest/download/WinHelper.exe)**
 
-Un seul fichier d'environ 150 Ko. Rien à installer, aucun droit administrateur, aucun service en arrière-plan.
+Un seul fichier d'environ 160 Ko. Rien à installer, aucun droit administrateur, aucun service en arrière-plan.
 
 ## Démarrer
 
@@ -22,7 +22,7 @@ Le panneau s'ouvre en bas à droite de l'écran, au-dessus des autres fenêtres.
 |---|---|
 | **Mesures** | Charge du processeur, de la mémoire et de la carte graphique |
 | **Performance** | Silence, Équilibré ou Turbo : mode d'alimentation de Windows et boost du processeur |
-| **Carte graphique** | Silence (60 images/s), Équilibré (réglages du pilote) ou Turbo, avec une carte NVIDIA ou AMD |
+| **Carte graphique** | Silence (60 images/s), Équilibré (vos réglages habituels) ou Turbo, avec une carte NVIDIA ou AMD |
 | **Écran** | Fréquence d'affichage, parmi celles que l'écran propose |
 | **Image** | Standard, Jeu (ombres éclaircies), Film et Nuit (couleurs plus chaudes) |
 | **Arrière-plan** | Liste des applications qui tournent en fond ; vous cochez celles à fermer |
@@ -31,8 +31,9 @@ Le panneau s'ouvre en bas à droite de l'écran, au-dessus des autres fenêtres.
 
 ## Bon à savoir
 
-- **Rien ne se ferme sans votre accord.** Le bouton Arrière-plan ouvre une liste ; seules les applications cochées sont fermées, et jamais une application dont la fenêtre est ouverte à l'écran.
-- **Carte graphique.** Les modes fonctionnent avec les cartes NVIDIA et AMD (pilote Adrenalin récent). Turbo privilégie les performances maximales chez NVIDIA et active Radeon Anti-Lag chez AMD. Les cartes Intel ne sont pas encore prises en charge.
+- **WinHelper rend ce qu'il change.** Les modes s'appliquent tant que WinHelper tourne. Quand vous le quittez ou éteignez le PC, Windows et le pilote graphique retrouvent leurs réglages d'avant ; le mode choisi revient au lancement suivant. Cochez « Lancer au démarrage » pour le garder en permanence.
+- **Rien ne se ferme sans votre accord.** Le bouton Arrière-plan ouvre une liste ; seules les applications cochées sont fermées, et jamais une application dont une fenêtre est ouverte à l'écran. Chaque application est prévenue avant d'être fermée : si elle refuse parce qu'elle a un travail en cours, elle reste ouverte.
+- **Carte graphique.** Les modes fonctionnent avec les cartes NVIDIA et AMD (pilote Adrenalin récent). Turbo privilégie les performances maximales chez NVIDIA et active Radeon Anti-Lag chez AMD. Les réglages que vous avez faits vous-même dans le logiciel NVIDIA ou AMD sont conservés. Les cartes Intel ne sont pas encore prises en charge.
 - **Pilotes.** « À jour » signifie que Windows Update ne propose rien de plus récent. Le fabricant peut publier une version plus récente sur son site ; un pilote graphique de plus d'un an est signalé avec le lien vers cette page.
 - **Températures et ventilateurs** ne sont pas affichés : les lire demande un pilote système, que WinHelper n'installe pas.
 - **Vie privée.** WinHelper n'envoie rien. La seule connexion est celle de Windows Update, quand la page Pilotes interroge le service de Windows.
