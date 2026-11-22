@@ -1,8 +1,8 @@
-# Licence de W-Helper
+# Licence de WinHelper
 
 © 2026 badb0ol. Tous droits réservés.
 
-W-Helper est un logiciel propriétaire, distribué gratuitement sous forme de programme exécutable.
+WinHelper est un logiciel propriétaire, distribué gratuitement sous forme de programme exécutable.
 
 Vous pouvez :
 

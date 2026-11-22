@@ -1,16 +1,16 @@
-# W-Helper
+# WinHelper
 
 Un petit panneau de contrôle pour Windows, pensé pour jouer : modes de performance, carte graphique, fréquence d'écran, rendu d'image, pilotes et nettoyage de la mémoire, en un clic. Il fonctionne sur n'importe quel PC, portable ou fixe, quelle que soit la marque.
 
-<img src="panneau.png" alt="Le panneau W-Helper" width="282">
+<img src="panneau.png" alt="Le panneau WinHelper" width="282">
 
-**[Télécharger W-Helper.exe](https://github.com/badb0ol/W-Helper/releases/latest/download/W-Helper.exe)**
+**[Télécharger WinHelper.exe](https://github.com/badb0ol/WinHelper/releases/latest/download/WinHelper.exe)**
 
 Un seul fichier d'environ 150 Ko. Rien à installer, aucun droit administrateur, aucun service en arrière-plan.
 
 ## Démarrer
 
-1. Téléchargez `W-Helper.exe` et lancez-le.
+1. Téléchargez `WinHelper.exe` et lancez-le.
 2. Windows affiche « Windows a protégé votre ordinateur » : l'application n'est pas encore signée. Cliquez sur **Informations complémentaires**, puis **Exécuter quand même**.
 3. Au premier lancement, choisissez la touche qui affichera le panneau (par exemple `Ctrl+Alt+W`). Vous pouvez la changer à tout moment en cliquant dessus en bas du panneau.
 
@@ -34,9 +34,9 @@ Le panneau s'ouvre en bas à droite de l'écran, au-dessus des autres fenêtres.
 - **Rien ne se ferme sans votre accord.** Le bouton Arrière-plan ouvre une liste ; seules les applications cochées sont fermées, et jamais une application dont la fenêtre est ouverte à l'écran.
 - **Carte graphique.** Les modes fonctionnent avec les cartes NVIDIA et AMD (pilote Adrenalin récent). Turbo privilégie les performances maximales chez NVIDIA et active Radeon Anti-Lag chez AMD. Les cartes Intel ne sont pas encore prises en charge.
 - **Pilotes.** « À jour » signifie que Windows Update ne propose rien de plus récent. Le fabricant peut publier une version plus récente sur son site ; un pilote graphique de plus d'un an est signalé avec le lien vers cette page.
-- **Températures et ventilateurs** ne sont pas affichés : les lire demande un pilote système, que W-Helper n'installe pas.
-- **Vie privée.** W-Helper n'envoie rien. La seule connexion est celle de Windows Update, quand la page Pilotes interroge le service de Windows.
-- Vos choix sont gardés dans `%AppData%\W-Helper\settings.json`.
+- **Températures et ventilateurs** ne sont pas affichés : les lire demande un pilote système, que WinHelper n'installe pas.
+- **Vie privée.** WinHelper n'envoie rien. La seule connexion est celle de Windows Update, quand la page Pilotes interroge le service de Windows.
+- Vos choix sont gardés dans `%AppData%\WinHelper\settings.json`.
 
 ## Configuration requise
 
@@ -44,4 +44,4 @@ Windows 10 ou 11, 64 bits. Le .NET Framework 4.8 nécessaire est déjà présent
 
 ## Licence
 
-W-Helper est un logiciel propriétaire, distribué gratuitement. Voir [LICENSE.md](LICENSE.md).
+WinHelper est un logiciel propriétaire, distribué gratuitement. Voir [LICENSE.md](LICENSE.md).
