@@ -22,7 +22,7 @@ Le panneau s'ouvre en bas à droite de l'écran, au-dessus des autres fenêtres.
 |---|---|
 | **Mesures** | Charge du processeur, de la mémoire et de la carte graphique |
 | **Performance** | Silence, Équilibré ou Turbo : mode d'alimentation de Windows et boost du processeur |
-| **Carte graphique** | Avec une carte NVIDIA : Silence (60 images/s), Équilibré (réglages du pilote) ou Turbo (performances maximales) |
+| **Carte graphique** | Silence (60 images/s), Équilibré (réglages du pilote) ou Turbo, avec une carte NVIDIA ou AMD |
 | **Écran** | Fréquence d'affichage, parmi celles que l'écran propose |
 | **Image** | Standard, Jeu (ombres éclaircies), Film et Nuit (couleurs plus chaudes) |
 | **Arrière-plan** | Liste des applications qui tournent en fond ; vous cochez celles à fermer |
@@ -32,7 +32,7 @@ Le panneau s'ouvre en bas à droite de l'écran, au-dessus des autres fenêtres.
 ## Bon à savoir
 
 - **Rien ne se ferme sans votre accord.** Le bouton Arrière-plan ouvre une liste ; seules les applications cochées sont fermées, et jamais une application dont la fenêtre est ouverte à l'écran.
-- **Carte graphique.** Les modes demandent une carte NVIDIA active. Les cartes AMD et Intel ne sont pas encore prises en charge.
+- **Carte graphique.** Les modes fonctionnent avec les cartes NVIDIA et AMD (pilote Adrenalin récent). Turbo privilégie les performances maximales chez NVIDIA et active Radeon Anti-Lag chez AMD. Les cartes Intel ne sont pas encore prises en charge.
 - **Pilotes.** « À jour » signifie que Windows Update ne propose rien de plus récent. Le fabricant peut publier une version plus récente sur son site ; un pilote graphique de plus d'un an est signalé avec le lien vers cette page.
 - **Températures et ventilateurs** ne sont pas affichés : les lire demande un pilote système, que W-Helper n'installe pas.
 - **Vie privée.** W-Helper n'envoie rien. La seule connexion est celle de Windows Update, quand la page Pilotes interroge le service de Windows.
