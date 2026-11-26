@@ -6,7 +6,7 @@ Un petit panneau de contrôle pour Windows, pensé pour jouer : modes de perform
 
 **[Télécharger WinHelper.exe](https://github.com/badb0ol/WinHelper/releases/latest/download/WinHelper.exe)**
 
-Un seul fichier d'environ 215 Ko. Rien à installer, aucun droit administrateur, aucun service en arrière-plan.
+Un seul fichier d'environ 220 Ko. Rien à installer, aucun service en arrière-plan. WinHelper tourne sans droits administrateur ; seuls deux réglages avancés, que vous choisissez vous-même, demandent l'autorisation de Windows.
 
 ## Démarrer
 
@@ -43,6 +43,12 @@ Le panneau s'ouvre en bas à droite de l'écran, au-dessus des autres fenêtres.
 - **Rien ne se ferme sans votre accord.** Le bouton Arrière-plan ouvre une liste ; seules les applications cochées sont fermées, et jamais une application dont une fenêtre est ouverte à l'écran. Chaque application est prévenue avant d'être fermée : si elle refuse parce qu'elle a un travail en cours, elle reste ouverte.
 - **Carte graphique.** Les modes fonctionnent avec les cartes NVIDIA et AMD (pilote Adrenalin récent). Turbo privilégie les performances maximales chez NVIDIA et active Radeon Anti-Lag chez AMD. Les réglages que vous avez faits vous-même dans le logiciel NVIDIA ou AMD sont conservés. Les cartes Intel ne sont pas encore prises en charge.
 - **Pilotes.** « À jour » signifie que Windows Update ne propose rien de plus récent. Le fabricant peut publier une version plus récente sur son site ; un pilote graphique de plus d'un an est signalé avec le lien vers cette page.
+- **Réglages avancés.** Un clic droit sur l'icône de la zone de notification, puis « Réglages avancés » :
+  - **Planification GPU accélérée** : la carte graphique gère elle-même la file d'images. Un peu moins de latence, et elle est nécessaire à la génération d'images DLSS 3 et FSR 3.
+  - **Captures de la Game Bar coupées** : Windows n'enregistre plus vos parties et ne les surveille plus pour pouvoir le faire. Le gain est modeste.
+  - **Intégrité de la mémoire coupée** : quelques pour cent de plus en jeu, mais Windows ne bloque plus certains pilotes malveillants. À réserver à un PC personnel ; si un jeu ou son anti-triche la réclame, réactivez-la.
+
+  La planification GPU et l'intégrité de la mémoire demandent l'autorisation de Windows (administrateur) et ne prennent effet qu'au redémarrage. WinHelper ne se relance en administrateur que le temps d'écrire ce réglage. Ces trois réglages restent en place quand vous quittez WinHelper : décochez-les pour revenir en arrière. Sur un PC géré par une entreprise, ils peuvent être bloqués.
 - **Températures.** Elles s'affichent quand Windows les fournit, ce qui dépend du PC. La vitesse des ventilateurs n'est pas affichée : la lire demande un pilote système, que WinHelper n'installe pas.
 - **Vie privée.** WinHelper n'envoie rien. Il se connecte seulement à Windows Update, quand la page Pilotes interroge le service de Windows, et à GitHub, pour savoir si une nouvelle version de WinHelper est publiée. Ces vérifications se font à l'ouverture de la page Pilotes, et au plus une fois par semaine.
 - Vos choix sont gardés dans `%AppData%\WinHelper\settings.json`.
